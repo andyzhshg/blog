@@ -1,4 +1,4 @@
 blog
 ====
 
-Blog of andyzhshg
+Blog of www.up4dev.com by andyzhshg
