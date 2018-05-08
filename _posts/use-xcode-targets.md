@@ -19,35 +19,35 @@ Xcode默认给我们创建了两个Target，一个是`MultiTargetPrj`，另一�
 
 我们用`MultiTargetPrj`作为正式版，在此基础上我们新建一个Target来做开发版应用。如下图，在已有的`MultiTargetPrj` Target上点击右键，在菜单中选择`Duplicate`。
 
-![复制targer0](http://cdn.up4dev.com/multitarget/duplicate0.png)
+![复制targer0](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/duplicate0.png)
 
 这样Xcode就为我们创建了一个名为`MultiTargetPrj copy`的Target，如下图
 
-![复制targer1](http://cdn.up4dev.com/multitarget/duplicate1.png)
+![复制targer1](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/duplicate1.png)
 
 后边带个`copy`尾巴的名字太不优雅了，让我们重命名一下，要重命名的地方不少，我们还是直接看图吧：
 
-![重命名0](http://cdn.up4dev.com/multitarget/rename0.png)
+![重命名0](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/rename0.png)
 
 然后重命名Schemes：
 
-![重命名1](http://cdn.up4dev.com/multitarget/rename1.png)
+![重命名1](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/rename1.png)
 
-![重命名2](http://cdn.up4dev.com/multitarget/rename2.png)
+![重命名2](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/rename2.png)
 
 最后然我们编辑一下info.plist，让应用在屏幕上显示的名字各不相同，正式版叫MT，开发版叫MT Dev，如下图所示：
 
-![显示名0](http://cdn.up4dev.com/multitarget/display0.png)
+![显示名0](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/display0.png)
 
-![显示名1](http://cdn.up4dev.com/multitarget/display0.png)
+![显示名1](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/display0.png)
 
 我们在界面上放置一个label，预期在运行正式版的应用时，显示`正式版`，测试版的应用时，显示`开发版`。
 
-![xib](http://cdn.up4dev.com/multitarget/xib.png)
+![xib](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/xib.png)
 
 为了让程序可以区分正式版和测试版，我们给开发版的target中设置一个预定义宏`MULTITARGET_DEV`:
 
-![设置预定义宏](http://cdn.up4dev.com/multitarget/macro.png)
+![设置预定义宏](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/macro.png)
 
 然后我们用一段代码来区分版本，设置不同的版本的文字：
 
@@ -65,13 +65,13 @@ Xcode默认给我们创建了两个Target，一个是`MultiTargetPrj`，另一�
 
 分别运行一次两个Target，我们看到的主屏是这样的：
 
-![主屏](http://cdn.up4dev.com/multitarget/home.png)
+![主屏](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/home.png)
 
 两个Target的运行结果是这个样子的：
 
-![正式版截图](http://cdn.up4dev.com/multitarget/run0.png)
+![正式版截图](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/run0.png)
 
-![测试版截图](http://cdn.up4dev.com/multitarget/run1.png)
+![测试版截图](http://up4dev.oss-cn-qingdao.aliyuncs.com/multitarget/run1.png)
 
 我把这个测试程序的代码放到了GitHub: [andyzhshg/MultiTarget](https://github.com/andyzhshg/MultiTarget)
 

@@ -65,7 +65,7 @@ docker run --net=my-net --net-alias=container_a --name=container_a -d my/my_imag
 docker run --net=my-net --net-alias=container_b --name=container_b -d my/my_image
 ```
 
-我们通过`--net`参数指定容器使用的网络，通过`--net-alias`指定容器在这个网络中的别名，这样在这个网络中的所有的容器就都可以通过这个份别名作为域名来访问到该容器了。
+我们通过`--net`参数指定容器使用的网络，通过`--net-alias`指定容器在这个网络中的别名，这样在这个网络中的所有的容器就都可以通过这个别名作为域名来访问到该容器了。
 
 
 
