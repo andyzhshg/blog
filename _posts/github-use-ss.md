@@ -71,5 +71,5 @@ git pull
 
 
 
-[参考]: http://www.afox.cc/archives/404	"Git搭配shadowsocks使用代理访问github"
+*参考：* [Git搭配shadowsocks使用代理访问github](http://www.afox.cc/archives/404 )
 
