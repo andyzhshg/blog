@@ -11,13 +11,13 @@ categories: 技术
 
 <!-- more -->
 
-## 0. 准备工作
+## 1. 准备工作
 
 因为我介绍的方法是一键替换群晖的默认证书，所以，为了防止意外，最好保证你的证书列表里只有一条记录，即默认证书那一条。实际上因为支持了泛域名证书，基本上这一条记录就足够用了（当然，如果你要管理多个域名，可能本文的方法并不实用）。所以开始工作前你的证书列表大概应该是这个样子：
 
 ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/nas-cert-up/cert-list.png)
 
-## 1.  下载一键更新脚本
+## 2.  下载一键更新脚本
 
 这是一键脚本的项目地址：[andyzhshg/syno-acme](https://github.com/andyzhshg/syno-acme)。
 
@@ -31,7 +31,7 @@ categories: 技术
 
 
 
-## 2. 配置脚本参数
+## 3. 配置脚本参数
 
 编辑脚本的配置文件`config`:
 
@@ -47,11 +47,11 @@ categories: 技术
 
 需要指出的是，我给出的配置文件模板并没有给出所有acme.sh支持的域名服务商，大家可以参照 [https://github.com/Neilpang/acme.sh/tree/master/dnsapi](https://github.com/Neilpang/acme.sh/tree/master/dnsapi)来添加自己的配置。一般情况下，这个页面每个文件对应一个域名服务商，比如`dns_ali.sh`就是对应阿里云，文件名去掉`.sh`扩展名就是DNS类型，比如阿里云的DNS类型就是`dns_ali`。打开对应文件， 一般都可以在文件的头部找到需要设置的授权信息对应的密钥，比如阿里云的授权密钥所在的位置如下图所示：
 
-## ![APIKEY](https://up4dev.oss-cn-qingdao.aliyuncs.com/nas-cert-up/apikey.png)
+![APIKEY](https://up4dev.oss-cn-qingdao.aliyuncs.com/nas-cert-up/apikey.png)
 
 `config`模板中没有的服务商，请大家自行完善。
 
-## 3. 配置定时任务
+## 4. 配置定时任务
 
 ### i. 查找脚本路径
 
@@ -103,4 +103,13 @@ categories: 技术
 
 这基本就是本文的全部了，如果大家使用中遇到问题，可以在这里留言或者到 [https://github.com/andyzhshg/syno-acme/issues](https://github.com/andyzhshg/syno-acme/issues) 提issue。
 
-
+
+
+------
+
+
+
+
+[^参考1]: [Synology NAS Guide](https://github.com/Neilpang/acme.sh/wiki/Synology-NAS-Guide)
+[^参考2]: [群晖 Let's Encrypt 证书的自动更新](http://www.up4dev.com/2017/09/11/synology-ssl-cert-update/)
+
