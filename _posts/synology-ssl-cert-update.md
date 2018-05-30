@@ -210,7 +210,7 @@ python update.py
 
 [^2018.05.09]: Let's Encrypt 已经支持wildcard类型的证书，可能已经有比本文更好的方法了，待我研究之后再写一篇文章。
 
-[^2018.05.30]: 泛域名的更新方法我已经另写了另一篇文章，大家可以参考：[群晖 Let's Encrypt 泛域名证书自动更新](http://www.up4dev.com/2019/05/29/synology-ssl-wildcard-cert-update/)
+[^2018.05.30]: 泛域名的更新方法我已经另写了另一篇文章，大家可以参考：[群晖 Let's Encrypt 泛域名证书自动更新](http://www.up4dev.com/2018/05/29/synology-ssl-wildcard-cert-update/)
 
 
 ## 参考

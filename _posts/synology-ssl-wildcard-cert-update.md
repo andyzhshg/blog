@@ -1,5 +1,5 @@
 title: 群晖 Let's Encrypt 泛域名证书自动更新
-date: 2019-05-29 18:00:00
+date: 2018-05-29 18:00:00
 tags: [HTTPS, Let's Encrypt, NAS, 群晖,泛域名,acme]
 categories: 技术
 
