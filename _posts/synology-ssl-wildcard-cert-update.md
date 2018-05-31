@@ -1,6 +1,6 @@
 title: 群晖 Let's Encrypt 泛域名证书自动更新
 date: 2018-05-29 18:00:00
-tags: [HTTPS, Let's Encrypt, NAS, 群晖,泛域名,acme]
+tags: [HTTPS, Let's Encrypt, NAS, 群晖,泛域名,acme,Synology,SSL]
 categories: 技术
 
 ---
@@ -21,7 +21,7 @@ categories: 技术
 
 这是一键脚本的项目地址：[andyzhshg/syno-acme](https://github.com/andyzhshg/syno-acme)。
 
-如果你对项目本身不感兴趣，可以直接下载打包好的工具：[syno-acme v0.1.1](https://github.com/andyzhshg/syno-acme/archive/v0.1.1.zip)。
+如果你对项目本身不感兴趣，可以直接下载打包好的工具：[syno-acme v0.1.2](https://github.com/andyzhshg/syno-acme/archive/v0.1.2.zip)。
 
 可以通过 File Station 将下载的工具上传到NAS的任意目录下，并解压。
 
@@ -50,6 +50,8 @@ categories: 技术
 ![APIKEY](https://up4dev.oss-cn-qingdao.aliyuncs.com/nas-cert-up/apikey.png)
 
 `config`模板中没有的服务商，请大家自行完善。
+
+[^2018.05.31]: 针对评论区同学提出的 Linode 的 API 生效时间的问题，增加了一个配置参数`DNS_SLEEP`，出现类似问题的话可以通过修改增大这个参数来解决。
 
 ## 4. 配置定时任务
 
@@ -103,11 +105,7 @@ categories: 技术
 
 这基本就是本文的全部了，如果大家使用中遇到问题，可以在这里留言或者到 [https://github.com/andyzhshg/syno-acme/issues](https://github.com/andyzhshg/syno-acme/issues) 提issue。
 
-
-
 ------
-
-
 
 
 [^参考1]: [Synology NAS Guide](https://github.com/Neilpang/acme.sh/wiki/Synology-NAS-Guide)
