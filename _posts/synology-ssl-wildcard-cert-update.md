@@ -11,10 +11,6 @@ categories: 技术
 
 <!-- more -->
 
-> 注意： 本文提到的方法还没有经过严格的测试，我还在进一步对脚本调试，如果对原理不是十分清楚，还请谨慎使用，我会在进一步测试确认基本没有问题后放出的新的版本并删除这段警告。
->
-> 2018.05.31
-
 ## 1. 准备工作
 
 因为我介绍的方法是一键替换群晖的默认证书，所以，为了防止意外，最好保证你的证书列表里只有一条记录，即默认证书那一条。实际上因为支持了泛域名证书，基本上这一条记录就足够用了（当然，如果你要管理多个域名，可能本文的方法并不实用）。所以开始工作前你的证书列表大概应该是这个样子：
@@ -25,7 +21,7 @@ categories: 技术
 
 这是一键脚本的项目地址：[andyzhshg/syno-acme](https://github.com/andyzhshg/syno-acme)。
 
-如果你对项目本身不感兴趣，可以直接下载打包好的工具：[syno-acme v0.1.2](https://github.com/andyzhshg/syno-acme/archive/v0.1.2.zip)。
+如果你对项目本身不感兴趣，可以直接下载打包好的工具：[syno-acme v0.1.3](https://github.com/andyzhshg/syno-acme/archive/v0.1.3.zip)。
 
 可以通过 File Station 将下载的工具上传到NAS的任意目录下，并解压。
 
@@ -90,7 +86,7 @@ categories: 技术
 上图红框中的脚本命令为(注意没有换行)：
 
 ```bash
-/volume1/nas_share/certs/syno-acme/cert-up.sh >> /volume1/nas_share/certs/syno-acme/log.txt 2>&1
+/volume1/nas_share/certs/syno-acme/cert-up.sh update >> /volume1/nas_share/certs/syno-acme/log.txt 2>&1
 ```
 
 具体的路径是步骤 `i`中复制的路径。
@@ -102,6 +98,16 @@ categories: 技术
 ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/nas-cert-up/task-run.png)
 
 这样脚本就会运行，自动更新证书，并重启web服务器加载新的脚本。以后，NAS会每隔一个月执行一次该脚本，自动更新证书。
+
+
+
+### iv. 回滚
+
+脚本里提供了回滚命令，可以通过ssh登录到nas，定位到对应目录，执行如下命令回滚证书目录到备份的状态：
+
+```bash
+/volume1/nas_share/certs/syno-acme/cert-up.sh revert
+```
 
 ## 总结
 
