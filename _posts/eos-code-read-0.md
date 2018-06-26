@@ -13,7 +13,7 @@ FLAG立在这里了，开始执行。
 
 以下是已经完成的文章列表，我随着写作的进度逐步添加：
 
-- [EOS 代码分析 [1] —— AppBase](http://www.up4dev.com/2018/06/26/eos-code-read-0/)
+- [EOS 代码分析 [1] —— AppBase](http://www.up4dev.com/2018/06/26/eos-code-read-1-appbase/)
 
 <!-- more -->
 
