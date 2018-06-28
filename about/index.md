@@ -2,6 +2,7 @@ title: 关于我
 date: 2015-09-07 17:03:19
 tags: [非技术]
 categories: 杂
+comments: false
 
 ---
 
