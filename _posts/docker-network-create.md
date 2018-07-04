@@ -1,7 +1,7 @@
 title: 用network create解决Docker容器互相连接的问题
 date: 2016-10-09 20:00:00
 tags: [技术, docker]
-categories: 技术
+categories: 泛技术
 
 ---
 

@@ -1,7 +1,7 @@
 title: EOS 代码分析 [1] —— AppBase
 date: 2018-06-26 15:35:00
 tags: [区块链, EOS, 智能合约, 技术, C++, 插件]
-categories: 技术
+categories: 区块链
 
 ------
 

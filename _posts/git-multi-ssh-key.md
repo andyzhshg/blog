@@ -1,7 +1,7 @@
 title: 管理多个github账号的 ssh key
 date: 2018-05-05 16:14:00
 tags: [github, git, ssh, 技术]
-categories: 技术
+categories: 泛技术
 
 ------
 

@@ -1,7 +1,7 @@
 title: C++11的智能指针(2) shared_ptr
 date: 2016-10-19 23:17:00
 tags: [技术, C++, C++0x, 智能指针]
-categories: 技术
+categories: C++
 
 ---
 

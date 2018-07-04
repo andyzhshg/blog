@@ -1,7 +1,7 @@
 title: git commit 时指定时间和作者等信息
 date: 2017-06-12 14:32:00
 tags: [git, 技术]
-categories: 技术
+categories: 泛技术
 
 ---
 

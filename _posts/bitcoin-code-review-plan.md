@@ -1,7 +1,7 @@
 title: 比特币源码分析写作计划
 date: 2017-01-09 15:02:00
 tags: [区块链, 比特币, BitCoin, 技术, C++]
-categories: 技术
+categories: 区块链
 
 ---
 

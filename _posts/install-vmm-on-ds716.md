@@ -1,7 +1,7 @@
 title: 在群晖 DS716+II 上安装 VMM(Virtual Machine Manager)
 date: 2018-05-10 13:12:00
 tags: [NAS, 技术, 虚拟机,VMM]
-categories: 技术
+categories: 泛技术
 
 ------
 

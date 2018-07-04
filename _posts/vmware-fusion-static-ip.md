@@ -1,7 +1,7 @@
 title: 给VMWare Fusion设置固定IP
 date: 2016-10-15 14:36:00
 tags: [技术, 工具]
-categories: 技术
+categories: 泛技术
 
 ---
 

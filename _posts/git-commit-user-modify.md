@@ -1,7 +1,7 @@
 title: git修改提交记录的用户名和邮箱
 date: 2016-10-08 19:00:00
 tags: [技术, git]
-categories: 技术
+categories: 泛技术
 
 ---
 

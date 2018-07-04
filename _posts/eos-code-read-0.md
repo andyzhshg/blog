@@ -1,7 +1,7 @@
 title: EOS 代码分析 [0]
 date: 2018-06-26 15:32:00
 tags: [区块链, EOS, 智能合约, 技术, C++]
-categories: 技术
+categories: 区块链
 
 ------
 

@@ -1,7 +1,7 @@
 title: 群晖 Let's Encrypt 证书的自动更新
 date: 2017-09-11 18:00:00
 tags: [HTTPS, Let's Encrypt, NAS, 群晖]
-categories: 技术
+categories: 泛技术
 
 ---
 

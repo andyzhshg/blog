@@ -1,7 +1,7 @@
 title: 如何让git命令通过ss拉取github代码
 date: 2018-05-14 22:26:00
 tags: [技术, git, ss]
-categories: 技术
+categories: 泛技术
 
 ------
 
