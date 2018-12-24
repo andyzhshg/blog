@@ -24,5 +24,7 @@ categories: 泛技术
 
 罗技，You are welcome! 很高兴帮你做客服...
 
-[论坛原贴]: https://community.logitech.com/s/question/0D55A00007eQqkXSAS/scrolling-not-working-on-macos-mojave
+
+
+[参考：论坛原贴](https://community.logitech.com/s/question/0D55A00007eQqkXSAS/scrolling-not-working-on-macos-mojave)
 
