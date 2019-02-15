@@ -34,3 +34,6 @@ export all_proxy=socks5://127.0.0.1:1080
 https://github.com/mrdulin/blog/issues/18
 
 https://studygolang.com/articles/9490
+
+https://github.com/golang/go/wiki/GoGetProxyConfig
+
