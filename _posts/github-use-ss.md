@@ -73,3 +73,8 @@ git pull
 
 *参考：* [Git搭配shadowsocks使用代理访问github](http://www.afox.cc/archives/404 )
 
+
+
+
+
+[^update 2019.02.15]: 这篇文章提到的方法可能是mac上一个更加便捷且普式的方法： [mac的终端用ss做代理](http://www.up4dev.com/2019/02/15/mac-term-ss/)
