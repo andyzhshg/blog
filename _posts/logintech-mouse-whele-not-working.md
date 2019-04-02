@@ -16,7 +16,7 @@ categories: 泛技术
 3. 点击`安全性与隐私`
 4. 点击`隐私`标签页
 5. 点击左侧的`辅助功能`
-6. 点击`Logitech Options Deamon`(如果是灰掉的不能点就先点击左下角的锁图标解锁)
+6. 选中`Logitech Options Deamon`(如果是灰掉的不能点就先点击左下角的锁图标解锁)
 
 这时就发现滚轮生效了，而且可以通过`Logitech Options`来设置自定义键的功能了。
 
