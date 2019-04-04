@@ -66,7 +66,7 @@ docker run -d \
 
 第1行是将宿主机的`/var/run/docker.sock`映射到容器中，这样在容器中运行的docker命令，就会在宿主机上来执行。
 
-第2行是将宿主机的`docker`程序映射进容器中，这样本省没有安装docker的jenkins容器就可以执行docker命令了（事实上容器里是没有运行docker的服务的，我们只是用这个映射进容器的docker来作为客户端发送docker的指令到`/var/run/docker.sock`而已，儿`/var/run/docker.sock`已经被链接到宿主机了）。
+第2行是将宿主机的`docker`程序映射进容器中，这样本身没有安装docker的jenkins容器就可以执行docker命令了（事实上容器里是没有运行docker的服务的，我们只是用这个映射进容器的docker来作为客户端发送docker的指令到`/var/run/docker.sock`而已，儿`/var/run/docker.sock`已经被链接到宿主机了）。
 
 至此，我们的jenkins就准备就绪了。
 
