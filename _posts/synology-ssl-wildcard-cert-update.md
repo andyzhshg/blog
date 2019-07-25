@@ -21,7 +21,7 @@ categories: 泛技术
 
 这是一键脚本的项目地址：[andyzhshg/syno-acme](https://github.com/andyzhshg/syno-acme)。
 
-如果你对项目本身不感兴趣，可以直接下载打包好的工具：[syno-acme v0.1.6](https://github.com/andyzhshg/syno-acme/archive/v0.1.6.zip)。
+如果你对项目本身不感兴趣，可以直接下载打包好的工具：[syno-acme v0.1.7](https://github.com/andyzhshg/syno-acme/archive/v0.1.7.zip)。
 
 可以通过 File Station 将下载的工具上传到NAS的任意目录下，并解压。
 
