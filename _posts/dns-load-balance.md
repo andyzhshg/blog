@@ -1,7 +1,7 @@
 title: 利用 dns 负载均衡提高宽带多拨状态下的上行并发能力
 date: 2019-07-23 11:47:13
 tags: [技术, DNS, LEDE, koolshare, 多拨, DDNS, OpenWRT]
-categories: 范技术
+categories: 泛技术
 
 ------
 
