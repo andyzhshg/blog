@@ -15,8 +15,10 @@ categories: 技术
 > CMAKE_DEPENDENT_OPTION(USE_FOO "Use Foo" ON
 >                        "USE_BAR;NOT USE_ZOT" OFF)
 > ```
->
+> 
 > If USE_BAR is true and USE_ZOT is false, this provides an option called USE_FOO that defaults to ON. Otherwise, it sets USE_FOO to OFF. If the status of USE_BAR or USE_ZOT ever changes, any value for the USE_FOO option is saved so that when the option is re-enabled it retains its old value.
+
+<!-- more -->
 
 这段英文绕来绕去，越看越头疼，我就不按原文翻译了，只说一下我的理解。我先把这个命令的具体形式再重复一下：
 
