@@ -5,15 +5,15 @@ categories: 泛技术
 
 ---
 
-去年曾经写过一篇文章介绍如[何在群晖的 NAS 通过 acme 协议更新 Let's Encrypt 的 HTTPS 证书](http://www.up4dev.com/2017/09/11/synology-ssl-cert-update/)。最近突然发现acme协议版本更新，开始支持泛域名(wildcard)，也就是说，可以申请一个类似`*.domain.com`的单一证书，就可以适配`abc.domain.com`，`xyz.domain.com`这类的子域名，而不需要单独为每个子域名申请证书了。
+曾经写过一篇文章介绍如[何在群晖的 NAS 通过 acme 协议更新 Let's Encrypt 的 HTTPS 证书](http://www.up4dev.com/2017/09/11/synology-ssl-cert-update/)。目前acme协议版本更新，开始支持泛域名(wildcard)，也就是说，可以申请一个类似`*.domain.com`的单一证书，就可以适配`abc.domain.com`，`xyz.domain.com`这类的子域名，而不需要单独为每个子域名申请证书了。
 
-[**Neilpang/acme.sh**](https://github.com/Neilpang/acme.sh) 工具很快就支持新的协议了，我这篇文章就是在这个工具的基础上，实现泛域名的自动更新。为了减少复杂度，我编写了一个一键更新的懒人脚本，来帮助不愿意了解原理的同学快速部署。
+[**acmesh-official/acme.sh**](https://github.com/acmesh-official/acme.sh) 工具已经支持新的协议，我这篇文章就是在这个工具的基础上，实现泛域名的自动更新。为了减少复杂度，我编写了一个一键更新的懒人脚本，来帮助没有时间了解详细原理的同学快速部署。
 
 <!-- more -->
 
 ## 1. 准备工作
 
-因为我介绍的方法是一键替换群晖的默认证书，所以，为了防止意外，最好保证你的证书列表里只有一条记录，即默认证书那一条。实际上因为支持了泛域名证书，基本上这一条记录就足够用了（当然，如果你要管理多个域名，可能本文的方法并不实用）。所以开始工作前你的证书列表大概应该是这个样子：
+因为我介绍的方法是一键替换群晖的默认证书，所以，为了防止意外，最好保证你的证书列表里只有一条记录，即默认证书那一条。实际上因为支持了泛域名证书，基本上这一条记录就足够用了（当然，如果你要管理多个域名，可能本文的方法并不适用）。开始工作前你的证书列表大概应该是这个样子：
 
 ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/nas-cert-up/cert-list.png)
 
@@ -43,9 +43,9 @@ categories: 泛技术
 
 然后是DNS的类型，根据服务商的不同，DNS类型各不相同，比如阿里云（dns_ali），Dnspod（dns_dp），Godaddy（dns_gd）等。
 
-最后要根据不同的服务商配置服务上提供的授权密钥等信息，比如我的域名服务商是阿里云，我需要编辑`Ali_Key`和`Ali_Secret`字段，字段的内容需要到域名服务商的管理后台来查看，因为不同的服务商的查看方式不同，请大家根据自己的实际情况去查找吧。
+最后要根据不同的域名服务商提供的授权密钥等信息，比如我的域名服务商是阿里云，我需要编辑`Ali_Key`和`Ali_Secret`字段，字段的内容需要到域名服务商的管理后台来查看，因为不同的服务商的查看方式不同，请大家根据自己的实际情况去查找。
 
-需要指出的是，我给出的配置文件模板并没有给出所有acme.sh支持的域名服务商，大家可以参照 [https://github.com/Neilpang/acme.sh/tree/master/dnsapi](https://github.com/Neilpang/acme.sh/tree/master/dnsapi)来添加自己的配置。一般情况下，这个页面每个文件对应一个域名服务商，比如`dns_ali.sh`就是对应阿里云，文件名去掉`.sh`扩展名就是DNS类型，比如阿里云的DNS类型就是`dns_ali`。打开对应文件， 一般都可以在文件的头部找到需要设置的授权信息对应的密钥，比如阿里云的授权密钥所在的位置如下图所示：
+需要指出的是，我给出的配置文件模板并没有给出所有acme.sh支持的域名服务商，大家可以参照 [https://github.com/acmesh-official/acme.sh/tree/master/dnsapi](https://github.com/acmesh-official/acme.sh/tree/master/dnsapi)来添加自己的配置。一般情况下，这个页面每个文件对应一个域名服务商，比如`dns_ali.sh`就是对应阿里云，文件名去掉`.sh`扩展名就是DNS类型，比如阿里云的DNS类型就是`dns_ali`。打开对应文件， 一般都可以在文件的头部找到需要设置的授权信息对应的密钥，比如阿里云的授权密钥所在的位置如下图所示：
 
 ![APIKEY](https://up4dev.oss-cn-qingdao.aliyuncs.com/nas-cert-up/apikey.png)
 
