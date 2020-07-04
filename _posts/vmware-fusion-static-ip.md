@@ -32,9 +32,9 @@ ssh up4dev@ubuntu.vm
 
 话不多说，直接上图
 
-![设置-网络适配器](http://up4dev.oss-cn-qingdao.aliyuncs.com/vmware-fusion-static-ip/0.jpeg)
+![设置-网络适配器](http://s3.up4dev.com:38080/blog/vmware-fusion-static-ip/0.jpeg)
 
-![设置-网络是配置-MAC地址](http://up4dev.oss-cn-qingdao.aliyuncs.com/vmware-fusion-static-ip/1.jpeg)
+![设置-网络是配置-MAC地址](http://s3.up4dev.com:38080/blog/vmware-fusion-static-ip/1.jpeg)
 
 ## 步骤2 - 修改dhcpd.conf
 
@@ -106,7 +106,7 @@ host Ubuntu16.04_0 {
 
 - 第1行，`Ubuntu16.04_0`是虚拟机的名字，看下图，注意要拼写要完全一致。
 
-    ![VM Name](http://up4dev.oss-cn-qingdao.aliyuncs.com/vmware-fusion-static-ip/2.jpeg)
+    ![VM Name](http://s3.up4dev.com:38080/blog/vmware-fusion-static-ip/2.jpeg)
 
 - 第2行，`00:0C:29:79:EC:1A`是上一步获取的MAC地址。
 
