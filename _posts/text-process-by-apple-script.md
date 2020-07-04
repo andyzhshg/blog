@@ -28,25 +28,25 @@ time="2019-07-24T10:39:06Z" level=info msg="[Out] {\"id\":257945,\"type\":3,\"ti
 
 1. 打开 `自动操作` 程序
 
-   ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-1.png)
+   ![](http://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-1.png)
 
 2. 选 `新建文稿`，文稿类型为 `快速操作`
 
-   ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-2.png)
+   ![](http://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-2.png)
 
 3. 在搜索栏搜索 `shell` ，选择 `运行 shell 脚本` 组件，拖入工作区，并填入 `sed 's/\\\"/\"/g' | /usr/local/bin/jq` 作为脚本内容。
 
-   ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-3.png)
+   ![](http://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-3.png)
 
 4. 在搜索栏搜索 `剪贴板`，选择 `拷贝至剪贴板` 组件，拖入工作区。
 
-   ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-4.png)
+   ![](http://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-4.png)
 
 5. 保存脚本，比如我命名为 `Logrus Trans`
 
 6. 至此脚本就编写完成了，使用的效果大概是这样的
 
-   ![](https://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-5.png)
+   ![](http://up4dev.oss-cn-qingdao.aliyuncs.com/text-process-by-apple-script/tpbas-5.png)
 
 
 
